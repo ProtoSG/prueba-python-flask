@@ -4,8 +4,8 @@ from flask import Flask, request, jsonify
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session, sessionmaker
 
-load_dotenv()
 app = Flask(__name__)
+load_dotenv()
 
 TURSO_DATABASE_URL = os.environ.get('TURSO_DATABASE_URL')
 TURSO_AUTH_TOKEN = os.environ.get('TURSO_AUTH_TOKEN')
